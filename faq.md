@@ -36,7 +36,7 @@ um clique, sem login.
 ## Para o administrador da OSC
 
 **Preciso do WooCommerce?**
-Sim. O Bússola Solidária usa o WooCommerce como motor de pagamento e checkout.
+Sim. O RIT360 Solidário usa o WooCommerce como motor de pagamento e checkout.
 
 **Os doadores viram usuários do WordPress?**
 Não. Os doadores ficam em uma base própria do plugin, identificados pelo e-mail,

@@ -1,11 +1,11 @@
 ---
 title: Início
 nav_order: 1
-description: Manual do usuário do plugin Bússola Solidária.
+description: Manual do usuário do plugin RIT360 Solidário.
 permalink: /
 ---
 
-# Manual do Bússola Solidária
+# Manual do RIT360 Solidário
 {: .fs-9 }
 
 Capte doações para a sua organização com a robustez do WooCommerce, mas na
@@ -43,4 +43,4 @@ conta**: o acesso ao seu painel é por um link enviado ao seu e-mail (magic link
 {: .note }
 > Este manual descreve o que você **vê na tela**. Se algo estiver diferente na
 > sua instalação, pode ser uma versão anterior do plugin — confira em
-> **Bússola Solidária → Sobre** a versão instalada.
+> **RIT360 Solidário → Sobre** a versão instalada.

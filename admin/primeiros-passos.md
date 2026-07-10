@@ -16,26 +16,26 @@ status: publicado
 
 # Primeiros passos
 
-Nesta página você instala o Bússola Solidária, ativa o plugin e conclui o
+Nesta página você instala o RIT360 Solidário, ativa o plugin e conclui o
 **Setup Wizard** — o assistente que prepara tudo para você receber a primeira
 doação: dados da OSC, identidade visual, o primeiro produto de doação e a página
 pública de doação.
 
 Você precisa de um WordPress com o **WooCommerce** instalado e ativo (é o motor
-de pagamento). O Bússola Solidária cuida do resto.
+de pagamento). O RIT360 Solidário cuida do resto.
 
 ## Passo a passo
 
 ### 1. Instalar e ativar o plugin
 
 Você recebe o plugin como um arquivo `.zip` (por exemplo,
-`bussola-solidaria-1.4.4.zip`).
+`rit360-solidario-2.0.0.zip`).
 
 1. No painel do WordPress, abra **Plugins → Adicionar novo → Enviar plugin**.
 2. Selecione o arquivo `.zip` e clique em **Instalar agora**.
 3. Clique em **Ativar**.
 
-![Tela de plugins do WordPress com o Bússola Solidária ativado](../assets/admin-setup-01.png)
+![Tela de plugins do WordPress com o RIT360 Solidário ativado](../assets/admin-setup-01.png)
 
 {: .note }
 > Se o WooCommerce ainda não estiver ativo, o WordPress avisa. Instale e ative o
@@ -44,7 +44,7 @@ Você recebe o plugin como um arquivo `.zip` (por exemplo,
 ### 2. Abrir o Setup Wizard
 
 Logo após ativar, o plugin oferece o **Setup Wizard**. Você também pode abri-lo
-depois em **Bússola Solidária → Configurações**.
+depois em **RIT360 Solidário → Configurações**.
 
 ![Boas-vindas do Setup Wizard](../assets/admin-setup-02.png)
 
@@ -87,5 +87,5 @@ na entrega (COD)** apenas para você testar o fluxo de ponta a ponta.
 ## Dicas
 
 - Você pode **reabrir o Setup Wizard** a qualquer momento em
-  **Bússola Solidária → Configurações**.
+  **RIT360 Solidário → Configurações**.
 - As cores e o logo continuam editáveis depois, na aba **Identidade visual**.

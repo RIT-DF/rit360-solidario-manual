@@ -12,12 +12,12 @@ referenciam esses arquivos; assim que o PNG existir, a imagem aparece.
 
 | Arquivo | Rota | O que precisa aparecer |
 |---|---|---|
-| `admin-setup-01.png` | `/wp-admin/plugins.php` | Bússola Solidária ativado na lista de plugins |
+| `admin-setup-01.png` | `/wp-admin/plugins.php` | RIT360 Solidário ativado na lista de plugins |
 | `admin-setup-02.png` | `…?page=bs-setup` | Tela de boas-vindas do Setup Wizard |
 | `admin-setup-03.png` | Wizard → Identidade visual | Etapa de logo e cores da OSC |
 | `admin-setup-04.png` | Wizard → conclusão | Tela final com a página `/doe` criada |
-| `admin-painel-01.png` | `…?page=bussola-solidaria` | Painel com os KPIs do período |
-| `admin-doacoes-02.png` | `…?page=bussola-solidaria-doacoes` | Lista de doações com a barra de filtros |
+| `admin-painel-01.png` | `…?page=rit360-solidario` | Painel com os KPIs do período |
+| `admin-doacoes-02.png` | `…?page=rit360-solidario-doacoes` | Lista de doações com a barra de filtros |
 | `admin-doador-03.png` | Ficha de um doador | Ficha com ações (reenviar recibo/magic link) |
 | `admin-export-04.png` | Doações ou Doadores | Menu/botão de exportação (PDF/CSV/XLSX) |
 

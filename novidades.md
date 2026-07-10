@@ -35,5 +35,5 @@ completo, veja o `CHANGELOG.md` do projeto.
 - **Exportar doadores em XLSX:** planilha completa, com CPF/CEP/telefone como texto.
 
 {: .note }
-> Está usando uma versão anterior? Confira em **Bússola Solidária → Sobre** e peça
+> Está usando uma versão anterior? Confira em **RIT360 Solidário → Sobre** e peça
 > a atualização à equipe que cuida do seu site.

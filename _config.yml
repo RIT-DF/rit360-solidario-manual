@@ -1,51 +1,67 @@
-title: Bússola Solidária — Manual do Usuário
-description: >-
-  Manual do usuário do plugin Bússola Solidária: capte doações para a sua OSC
-  com WooCommerce, emita recibos, gerencie doadores e cumpra a LGPD.
+title: RIT360 Solidário
+description: "Manual do usuário e documentação oficial do RIT360 Solidário — captação de doações para Organizações da Sociedade Civil, pela RIT."
 lang: pt-BR
+url: https://docs.solidario.rit360.org.br
+permalink: pretty
 
 # Tema como gem (buildado via GitHub Actions — ver .github/workflows/pages.yml).
-# Não usar remote_theme: o Pages clássico (Jekyll 3.9) não builda o just-the-docs
-# moderno (requer Jekyll 4). Por isso o deploy é por Actions + Gemfile.
 theme: just-the-docs
 plugins:
   - jekyll-seo-tag
 
-# Busca client-side do just-the-docs.
-search_enabled: true
-search:
-  heading_level: 3
-  previews: 3
-
-# Aparência.
-color_scheme: light
-heading_anchors: true
-
-aux_links:
-  "Repositório do plugin":
-    - "https://github.com/RIT-DF/BussolaSolidaria"
-aux_links_new_tab: true
-
-# Rodapé de cada página.
-back_to_top: true
-back_to_top_text: "Voltar ao topo"
-last_edit_timestamp: true
-gh_edit_link: false
-
-footer_content: >-
-  Bússola Solidária — <a href="https://rit.org.br">RIT — Rede de Inovação e
-  Tecnologia</a>. Conteúdo mantido em <code>docs-publico/</code>.
-
-# Layout padrão para todas as páginas (evita repetir layout na front-matter).
 defaults:
   - scope:
       path: ""
     values:
       layout: default
 
-# Não versionar artefatos de build do Jekyll.
+# Tema / cor — esquema RIT360 Solidário (_sass/color_schemes/rit360-solidario.scss).
+color_scheme: rit360-solidario
+logo: "/assets/logo.png"
+
+# Busca
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+heading_anchors: true
+
+# Callouts (admonitions)
+callouts:
+  note:
+    title: Nota
+    color: blue
+  tip:
+    title: Dica
+    color: green
+  warning:
+    title: Atenção
+    color: yellow
+  important:
+    title: Importante
+    color: red
+  example:
+    title: Exemplo
+    color: purple
+
+# Rodapé
+footer_content: '© 2026 <a href="https://rit.org.br" target="_blank" rel="noopener">RIT — Rede de Inovação e Tecnologia</a>. Todos os direitos reservados.'
+last_edit_timestamp: false
+back_to_top: true
+back_to_top_text: "Voltar ao topo"
+gh_edit_link: false
+
+# Excluir do build
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
   - _manual
+  - README.md
+  - "*.sh"

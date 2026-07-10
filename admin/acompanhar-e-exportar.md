@@ -6,9 +6,9 @@ nav_order: 2
 task: acompanhar-e-exportar
 role: admin
 routes:
-  - /wp-admin/admin.php?page=bussola-solidaria
-  - /wp-admin/admin.php?page=bussola-solidaria-doacoes
-  - /wp-admin/admin.php?page=bussola-solidaria-doadores
+  - /wp-admin/admin.php?page=rit360-solidario
+  - /wp-admin/admin.php?page=rit360-solidario-doacoes
+  - /wp-admin/admin.php?page=rit360-solidario-doadores
 source_docs: [PRD#6.13-M12, PRD#6.14-M13, PRD#5.5]
 screenshots: [admin-painel-01, admin-doacoes-02, admin-doador-03, admin-export-04]
 last_verified: 2026-07-04
@@ -23,7 +23,7 @@ conselho.
 
 ## Ver os indicadores no painel
 
-No menu do WordPress, abra **Bússola Solidária**. O painel mostra os KPIs do
+No menu do WordPress, abra **RIT360 Solidário**. O painel mostra os KPIs do
 período (com seletor de **mês**, **ano** ou **personalizado**): total arrecadado,
 número de doações, doadores únicos, ticket médio, retenção mensal e os principais
 doadores.
@@ -32,7 +32,7 @@ doadores.
 
 ## Consultar e filtrar doações
 
-1. Abra **Bússola Solidária → Doações**.
+1. Abra **RIT360 Solidário → Doações**.
 2. Use os filtros (período, status, valor, doador, forma de pagamento, produto)
    para encontrar o que procura.
 3. Clique em uma linha para **ver o detalhe** da doação.
@@ -43,7 +43,7 @@ doadores.
 
 Quando um doador pede a segunda via do recibo:
 
-1. Abra **Bússola Solidária → Doadores** e busque pelo e-mail.
+1. Abra **RIT360 Solidário → Doadores** e busque pelo e-mail.
 2. Abra a **ficha do doador** — você vê todas as doações, consentimentos e
    comunicações.
 3. Clique em **Reenviar recibo** (ou **Reenviar magic link**, se ele quiser

@@ -1,0 +1,16 @@
+// Esquema de cores RIT360 Solidário (just-the-docs).
+// Paleta oficial da família em Brand/design-system.md.
+//
+// Acento do produto Solidário = Teal #24ae9c — mas tem contraste baixo (~2.3:1),
+// então NÃO é usado em texto (o design-system marca como "só gráfico/large").
+// O Teal vive na LOGO (que carrega a cor da marca). No corpo, tudo acessível:
+//   texto/links/títulos = Petróleo #0f4855 (AAA ~9:1) — cor de marca da família
+//   botão primário       = Verde #0c7357 (AA ~5:1, texto branco) — verde da família
+$link-color: #0f4855;          // Petróleo — link legível, cor de marca
+$btn-primary-color: #0c7357;   // Verde — acento acessível do produto (Teal falha p/ texto)
+$body-heading-color: #0f4855;  // Petróleo — títulos on-brand e legíveis
+$body-text-color: #1A1A1A;     // texto
+$nav-child-link-color: #6B6B6B; // texto secundário
+$sidebar-color: #F7F9FA;        // neutro frio (base RIT360)
+$border-color: #E5E7EB;         // hairline neutro
+$code-background-color: #F5F6F7;
