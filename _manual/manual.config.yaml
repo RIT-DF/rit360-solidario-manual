@@ -1,0 +1,25 @@
+projeto: Bússola Solidária
+lang: pt-BR
+organizacao:
+  eixo: tarefa            # tarefa | modulo
+  papeis: [admin, doador]
+secoes_fixas:
+  novidades: curada       # subconjunto curado do CHANGELOG
+  faq: true
+  privacidade: link       # linka a Política de Privacidade da OSC (não duplica)
+  termos: link
+render:
+  target: jekyll          # GitHub Pages builda; tema just-the-docs via remote_theme
+  theme: just-the-docs
+  source_root: docs-publico/   # fonte = publicado (Jekyll processa direto)
+  publish: bin/publish-manual.sh
+  repo: RIT-DF/docs-bussola-solidaria
+  domain: docs.bussola-solidaria.rit.org.br
+gates: [estrutura, roteiro, draft]
+captura:
+  modo: 1                 # roteiro; o usuário captura logado (a skill não autentica)
+  viewports: [desktop]
+  assets_dir: docs-publico/assets/
+notas:
+  - "Fonte do manual vive em docs-publico/ (é também o site publicado). A docs-keeper mantém daqui em diante."
+  - "Front-matter de cada página combina os campos do just-the-docs (title/parent/nav_order) com o contrato de handoff (task/role/routes/screenshots/source_docs/last_verified/status)."
