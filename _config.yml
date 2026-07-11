@@ -18,6 +18,7 @@ defaults:
 # Tema / cor — esquema RIT360 Solidário (_sass/color_schemes/rit360-solidario.scss).
 color_scheme: rit360-solidario
 logo: "/assets/logo.png"
+image: "/assets/og.png"
 
 # Busca
 search_enabled: true
