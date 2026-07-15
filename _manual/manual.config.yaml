@@ -1,4 +1,4 @@
-projeto: Bússola Solidária
+projeto: RIT360 Solidário
 lang: pt-BR
 organizacao:
   eixo: tarefa            # tarefa | modulo
@@ -6,20 +6,20 @@ organizacao:
 secoes_fixas:
   novidades: curada       # subconjunto curado do CHANGELOG
   faq: true
-  privacidade: link       # linka a Política de Privacidade da OSC (não duplica)
-  termos: link
+  privacidade: proprio    # documentos jurídicos próprios em legal/ (aviso/privacidade/termos/licenca)
+  termos: proprio
 render:
-  target: jekyll          # GitHub Pages builda; tema just-the-docs via remote_theme
+  target: jekyll          # GitHub Pages builda; tema just-the-docs (gem)
   theme: just-the-docs
-  source_root: docs-publico/   # fonte = publicado (Jekyll processa direto)
+  source_root: .          # o próprio manual/ é a fonte e o site publicado
   publish: bin/publish-manual.sh
-  repo: RIT-DF/docs-bussola-solidaria
-  domain: docs.bussola-solidaria.rit.org.br
+  repo: RIT-DF/rit360-solidario-manual
+  domain: docs.solidario.rit360.org.br
 gates: [estrutura, roteiro, draft]
 captura:
-  modo: 1                 # roteiro; o usuário captura logado (a skill não autentica)
-  viewports: [desktop]
-  assets_dir: docs-publico/assets/
+  viewport: [1920, 1080]  # FullHD (padrão da família)
+  assets_dir: assets/img/
 notas:
-  - "Fonte do manual vive em docs-publico/ (é também o site publicado). A docs-keeper mantém daqui em diante."
-  - "Front-matter de cada página combina os campos do just-the-docs (title/parent/nav_order) com o contrato de handoff (task/role/routes/screenshots/source_docs/last_verified/status)."
+  - "Manual reescrito do zero em 2026-07-15 contra a v2.6.1 (o anterior cobria ~30% e apontava telas inexistentes)."
+  - "Prints capturados no dev-wp com dados fictícios (OSC de exemplo 'Instituto Esperança'). Admin logado; front-end sem barra do WordPress."
+  - "Front-matter combina just-the-docs (title/parent/nav_order) + contrato docs-keeper (task/role/routes/screenshots/source_docs/last_verified/status)."

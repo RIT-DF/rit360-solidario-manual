@@ -20,6 +20,14 @@ color_scheme: rit360-solidario
 logo: "/assets/logo.png"
 image: "/assets/og.png"
 
+# Links auxiliares (canto superior direito)
+aux_links:
+  "RIT360 Solidário":
+    - "https://rit.org.br/solucoes/rit360-solidario/"
+  "Acessar a RIT":
+    - "https://rit.org.br"
+aux_links_new_tab: true
+
 # Busca
 search_enabled: true
 search:
@@ -52,7 +60,7 @@ callouts:
     color: purple
 
 # Rodapé
-footer_content: '© 2026 <a href="https://rit.org.br" target="_blank" rel="noopener">RIT — Rede de Inovação e Transformação</a>. Todos os direitos reservados.'
+footer_content: '<strong>RIT360 Solidário</strong> — ferramenta da <a href="https://rit.org.br" target="_blank" rel="noopener">RIT — Rede de Inovação e Transformação</a>, desenvolvida pela <a href="https://v3rtech.com.br" target="_blank" rel="noopener">V3RTECH</a>. Software livre sob licença GPL. Esta ferramenta apoia a gestão de doações, mas não substitui assessoria jurídica ou tributária. © 2026 RIT. <a href="/legal/aviso/">Aviso legal</a>.'
 last_edit_timestamp: false
 back_to_top: true
 back_to_top_text: "Voltar ao topo"

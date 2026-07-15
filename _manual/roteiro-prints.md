@@ -1,38 +1,63 @@
-# Roteiro de capturas — lote núcleo (Modo 1)
+# Roteiro de capturas — Manual RIT360 Solidário (v2.6.1)
 
-A skill **não faz login**: você captura cada tela logado no seu ambiente (use um
-**registro de teste/demo**, nunca dados pessoais reais — LGPD) e salva o PNG em
-`docs-publico/assets/` com **exatamente** o nome indicado. As páginas já
-referenciam esses arquivos; assim que o PNG existir, a imagem aparece.
+Ambiente: **dev-wp** (`http://localhost:3080/`), plugin 2.6.1, OSC de exemplo
+"Instituto Esperança", dados fictícios semeados. Viewport **1920×1080** em todas.
+Destino dos arquivos: `manual/assets/img/`.
 
-- **Viewport:** desktop (~1280px de largura). Espere a tela carregar por completo.
-- **Evite** timestamps chamativos e dados reais no enquadramento.
+## Regras
+- **Admin** (área `/wp-admin/`): capturar **logado** (a barra do WordPress pode
+  aparecer — é a área administrativa).
+- **Front-end** (`/doe`, transparência, portal do doador, checkout): capturar
+  **deslogado do wp-admin** (um doador real NÃO vê a barra preta do WordPress).
+  Usar contexto limpo / cookies zerados.
+- Esperar a tela carregar antes de capturar. Preferir viewport (não fullPage),
+  exceto onde indicado "página inteira".
 
-## Trilha do administrador
+## Admin — logado
 
-| Arquivo | Rota | O que precisa aparecer |
+| Arquivo | Rota | Deve mostrar |
 |---|---|---|
-| `admin-setup-01.png` | `/wp-admin/plugins.php` | RIT360 Solidário ativado na lista de plugins |
-| `admin-setup-02.png` | `…?page=bs-setup` | Tela de boas-vindas do Setup Wizard |
-| `admin-setup-03.png` | Wizard → Identidade visual | Etapa de logo e cores da OSC |
-| `admin-setup-04.png` | Wizard → conclusão | Tela final com a página `/doe` criada |
-| `admin-painel-01.png` | `…?page=rit360-solidario` | Painel com os KPIs do período |
-| `admin-doacoes-02.png` | `…?page=rit360-solidario-doacoes` | Lista de doações com a barra de filtros |
-| `admin-doador-03.png` | Ficha de um doador | Ficha com ações (reenviar recibo/magic link) |
-| `admin-export-04.png` | Doações ou Doadores | Menu/botão de exportação (PDF/CSV/XLSX) |
+| `painel.png` | `/wp-admin/admin.php?page=rit360-solidario` | KPIs + Top 10 doadores |
+| `doadores-lista.png` | `…?page=rit360-solidario-donors` | Busca, tabela de doadores, ações em lote, blocos de exportação (página inteira) |
+| `doador-detalhe.png` | clicar num doador da lista (ex.: Roberto Nascimento) | Dados + Recibos + Declarações |
+| `projetos.png` | `…?page=rit360-solidario-projetos` | Lista de projetos com meta/campanha/padrão + form "Novo projeto" (página inteira) |
+| `campanhas.png` | `…?page=rit360-solidario-campanhas` | Lista de campanhas com progresso vs meta |
+| `prestacao-contas.png` | `…?page=rit360-solidario-prestacao-contas` | Filtro de período + totais + quebra por campanha/projeto + evolução (página inteira) |
+| `config-organizacao.png` | `…?page=rit360-solidario-settings&tab=organizacao` | Formulário de dados da OSC |
+| `config-visual.png` | `…&tab=visual` | Cores + preview |
+| `config-lembretes.png` | `…&tab=lembretes` | Ativar lembretes + intervalo + envio manual |
+| `config-emails.png` | `…&tab=emails` | Templates (assunto+corpo TinyMCE) + botão único "Salvar todos os templates" (página inteira) |
+| `config-pdf.png` | `…&tab=pdf` | Cabeçalho/rodapé/recibo/declaração + pré-visualizar (página inteira) |
+| `config-avancado.png` | `…&tab=avancado` | Reset de rate limit do magic link |
+| `auditoria-lgpd.png` | `…?page=rit360-solidario-lgpd` | Aviso ROPA + tabela de auditoria |
+| `setup-wizard.png` | `…?page=bs-setup` | Passo 1 do Setup Wizard (Organização) |
+| `produto-doacao.png` | editar produto 67 (`/wp-admin/post.php?post=67&action=edit`), aba "Configuração de Doação" | Campos: valores, valor livre, frase de impacto, vídeo |
+| `feedback-modal.png` | qualquer tela do plugin → clicar "Enviar feedback" | Modal de feedback |
 
-## Trilha do doador
+## Front-end — deslogado (sem barra do WordPress)
 
-| Arquivo | Rota | O que precisa aparecer |
+| Arquivo | Rota / ação | Deve mostrar |
 |---|---|---|
-| `doador-doar-01.png` | `/doe` | Página de doação com valores sugeridos + valor livre |
-| `doador-checkout-02.png` | `/checkout` | Checkout com campo de CPF e o consentimento LGPD |
-| `doador-anonima-03.png` | `/checkout` | Opção “Quero doar anonimamente” marcada |
-| `doador-obrigado-04.png` | Pós-checkout | Página de agradecimento |
-| `doador-painel-01.png` | `/minhas-doacoes` | Formulário “Receber link de acesso” (magic link) |
-| `doador-recibo-02.png` | Painel do doador | Lista de doações com o botão **Baixar recibo** |
-| `doador-declaracao-03.png` | Painel do doador | Seletor de ano + **Baixar declaração anual** |
+| `doe-pagina.png` | `http://localhost:3080/doe/` | Imagem/título/frase de impacto + valores + "Doar agora" + vídeo + descrição (página inteira) |
+| `checkout-doacao.png` | em `/doe`, escolher R$ 50 → "Doar agora" → checkout | Rótulos "Doar agora"/"Valor da doação", campo CPF, consentimento LGPD, "doar anonimamente" |
+| `transparencia.png` | `http://localhost:3080/transparencia-teste/` | Cards de campanhas/projetos com arrecadado + barra de meta (sem nomes de doadores) |
+| `portal-login.png` | `http://localhost:3080/minhas-doacoes/` | Formulário "Acessar meu painel" (e-mail + "Receber link") |
+| `portal-doacoes.png` | portal logado (magic link donor 11) → aba "Minhas doações" | Histórico + "Baixar PDF" |
+| `portal-dados.png` | aba "Meus dados" | Formulário editável (e-mail/CPF bloqueados) + zona de perigo |
+| `portal-declaracao.png` | aba "Declaração anual" | Exercício + "Baixar declaração" |
+| `portal-preferencias.png` | aba "Preferências" | Opt-in de lembretes |
+| `portal-consentimentos.png` | aba "Consentimentos" | Consentimento c/ data + revogar + histórico |
 
-> As rotas são o ponto de partida (derivadas do PRD). Se na sua instalação o slug
-> for outro (ex.: página de doação em `/doar`), capture a tela equivalente — o que
-> importa é o **conteúdo** descrito.
+### Magic link do portal (uso único — gerar fresco no contexto limpo)
+```bash
+docker exec dev-wp wp --allow-root eval '
+global $wpdb; $b=random_bytes(32);
+$plain=rtrim(strtr(base64_encode($b),"+/","-_"),"=");
+$wpdb->insert($wpdb->prefix."bs_magic_links",[
+ "donor_id"=>11,"token_hash"=>hash("sha256",$plain),
+ "created_at"=>current_time("mysql"),
+ "expires_at"=>date("Y-m-d H:i:s",time()+86400),
+ "ip_address"=>"127.0.0.1","user_agent"=>"capture"]);
+echo "http://localhost:3080/minhas-doacoes/?rit360sol_token=".$plain."\n";'
+```
+Navegar a URL retornada UMA vez; a sessão do doador fica ativa por cookie para as 5 abas.

@@ -1,51 +1,87 @@
 ---
-title: Dúvidas frequentes
-nav_order: 9
-# --- contrato de handoff (docs-keeper) ---
+title: "Dúvidas frequentes"
+nav_order: 5
+permalink: /faq/
 task: faq
-role: ambos
-source_docs: [PRD#6, PRD#3]
-last_verified: 2026-07-04
+role: admin
+routes: []
+source_docs: [PRODUCT.md]
+last_verified: 2026-07-15
 status: publicado
 ---
 
 # Dúvidas frequentes
 
-## Para o doador
-
-**Preciso criar uma conta para doar?**
-Não. Você doa informando apenas nome e e-mail. O acesso ao seu painel é por um
-link enviado ao seu e-mail (magic link), sem senha.
-
-**O CPF é obrigatório?**
-Não. Ele é opcional e serve para emitir o recibo com validade fiscal. Sem CPF, a
-doação funciona normalmente.
-
-**Como consigo a segunda via do meu recibo?**
-Acesse **Minhas doações**, peça o link de acesso por e-mail e baixe o recibo pelo
-seu painel. Veja [Recibo e meu painel](./doador/recibo-e-painel).
-
-**Doação anônima gera recibo?**
-Não. A doação anônima remove seus dados de identificação e, por isso, não emite
-recibo nominal. Se você precisa do recibo, não marque a opção de anonimato.
-
-**Parei de querer os lembretes. Como cancelo?**
-Clique em “Não quero mais receber lembretes” no rodapé do próprio e-mail — vale em
-um clique, sem login.
-
-## Para o administrador da OSC
+## Sobre o funcionamento
 
 **Preciso do WooCommerce?**
-Sim. O RIT360 Solidário usa o WooCommerce como motor de pagamento e checkout.
+Sim. O RIT360 Solidário usa o WooCommerce como motor de pagamento e checkout. É
+ele que integra PIX, boleto, cartão e os gateways nacionais.
 
-**Os doadores viram usuários do WordPress?**
-Não. Os doadores ficam em uma base própria do plugin, identificados pelo e-mail,
-sem poluir a tabela de usuários do WordPress.
+**O doador precisa criar conta?**
+Não. Ele doa informando só nome e e-mail (o documento é opcional). Para ver
+recibos e histórico, acessa um painel próprio por um link enviado ao e-mail — sem
+senha.
 
-**Como emito recibo antes de o pagamento ser confirmado?**
-Não se emite. O recibo fiscal sai na **confirmação do pagamento**. Antes disso, no
-PIX/boleto, o doador recebe apenas um e-mail de reconhecimento.
+**Como o doador recupera um recibo antigo?**
+Pelo **portal do doador** (`/minhas-doacoes`): informa o e-mail, recebe o magic
+link e baixa o recibo ou a declaração anual. Você também consegue reenviar pela
+ficha do doador.
 
-**Posso exportar para a prestação de contas?**
-Sim: PDF, CSV e XLSX, respeitando os filtros. Veja
-[Acompanhar doações e exportar](./admin/acompanhar-e-exportar).
+**Dá para usar o mesmo site para vender outros produtos?**
+Sim. A troca de linguagem (“doação” em vez de “pedido”) só acontece quando o
+carrinho tem **apenas** produtos de doação. Produtos comuns seguem no checkout
+normal do WooCommerce.
+
+## Recibos e documentos
+
+**O recibo tem numeração fiscal?**
+Sim, com numeração sequencial no formato `AAAA/NNNNNN`, em PDF, com os dados da
+OSC. A **declaração anual** consolida as doações do ano.
+
+**Posso personalizar o texto do recibo?**
+Sim, em **Configurações → Documentos PDF**. Há um botão de pré-visualização e a
+opção de restaurar o texto padrão. Valide alterações com a sua contabilidade.
+
+**O doador informou o CPF errado / não informou. E agora?**
+O documento é opcional no checkout, mas necessário para o recibo fiscal. Sem ele,
+não há como emitir o recibo em nome da pessoa. Oriente o doador a doar informando o
+documento quando quiser o comprovante para dedução.
+
+## Campanhas, projetos e metas
+
+**Qual a diferença entre projeto e campanha?**
+O **projeto** é a causa com sua página e valores. A **campanha** é a temporada de
+arrecadação, com meta e prazo, que agrupa projetos. Veja
+[Campanhas que dão resultado](/guias/campanhas-que-dao-resultado/).
+
+**Como mostro o progresso da arrecadação no site sem expor os doadores?**
+Use o shortcode `[rit360sol_transparencia]`. Ele mostra o arrecadado e a meta, sem
+nomes de doadores.
+
+## Recorrência e lembretes
+
+**O RIT360 Solidário faz assinatura mensal?**
+Não no sentido de cobrança automática. Ele usa recorrência “soft”: envia um
+**lembrete mensal** com um botão para repetir a doação. O doador decide a cada mês
+e pode cancelar o lembrete em um clique.
+
+## LGPD e privacidade
+
+**Como um doador pede a exclusão dos dados?**
+Pelo próprio **portal do doador**, na aba **Consentimentos** — com dupla
+confirmação. Não é o administrador que anonimiza; é o doador. Os registros de
+doação são preservados de forma anônima (exigência fiscal).
+
+**Quem é o responsável pelos dados dos doadores?**
+A sua organização (a controladora). O RIT360 Solidário fornece as ferramentas de
+conformidade; as decisões e a responsabilidade são da OSC.
+
+## Versão e suporte
+
+**Como sei qual versão está instalada?**
+Em **Plugins**, na lista de plugins do WordPress, ao lado de “RIT360 Solidário”.
+
+**Como falo com a equipe?**
+Pelo botão **Enviar feedback**, na barra do topo de qualquer tela do plugin. Você
+pode relatar um problema, sugerir uma melhoria ou deixar um elogio.
