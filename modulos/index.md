@@ -29,7 +29,7 @@ painel do WordPress; os fluxos do doador acontecem no site público.
 ## Componentes
 
 - [**Produto de doação**](/modulos/produto-de-doacao/) — a configuração de cada “pacote de valores”.
-- [**Blocos e Shortcodes**](/modulos/blocos-shortcodes/) — para montar páginas no seu construtor.
+- [**Shortcodes**](/modulos/shortcodes/) — para montar páginas no seu construtor.
 
 ## A barra da família RIT360
 

@@ -47,4 +47,4 @@ progresso passa a somar automaticamente.
 >
 > - Sempre defina um **prazo**: urgência move a doação.
 > - Publique o progresso da campanha no site com o shortcode de transparência
->   (veja [Blocos e Shortcodes](/modulos/blocos-shortcodes/)).
+>   (veja [Shortcodes](/modulos/shortcodes/)).

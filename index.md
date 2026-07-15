@@ -90,9 +90,9 @@ permalink: /
     <div class="module-card-title">Auditoria LGPD</div>
     <div class="module-card-desc">Trilha de ações e bases legais do tratamento de dados.</div>
   </a>
-  <a class="module-card" href="/modulos/blocos-shortcodes/">
+  <a class="module-card" href="/modulos/shortcodes/">
     <div class="module-card-icon">🧩</div>
-    <div class="module-card-title">Blocos e Shortcodes</div>
+    <div class="module-card-title">Shortcodes</div>
     <div class="module-card-desc">Componentes para montar páginas no seu construtor.</div>
   </a>
 </div>

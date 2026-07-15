@@ -30,6 +30,7 @@ Destino dos arquivos: `manual/assets/img/`.
 | `config-pdf.png` | `…&tab=pdf` | Cabeçalho/rodapé/recibo/declaração + pré-visualizar (página inteira) |
 | `config-avancado.png` | `…&tab=avancado` | Reset de rate limit do magic link |
 | `auditoria-lgpd.png` | `…?page=rit360-solidario-lgpd` | Aviso ROPA + tabela de auditoria |
+| `shortcodes-tela.png` | `…?page=rit360-solidario-shortcodes` | Referência dos shortcodes em cards (tag + exemplo copiável + parâmetros), página inteira — v2.7.0 |
 | `setup-wizard.png` | `…?page=bs-setup` | Passo 1 do Setup Wizard (Organização) |
 | `produto-doacao.png` | editar produto 67 (`/wp-admin/post.php?post=67&action=edit`), aba "Configuração de Doação" | Campos: valores, valor livre, frase de impacto, vídeo |
 | `feedback-modal.png` | qualquer tela do plugin → clicar "Enviar feedback" | Modal de feedback |

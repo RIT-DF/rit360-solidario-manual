@@ -95,7 +95,7 @@ Confiança é o que separa uma campanha que arrecada de uma que não sai do luga
   ![Página de transparência](/assets/img/transparencia.png)
 
 - Use os blocos e shortcodes de **projetos** e **campanhas** para montar o hotsite
-  da campanha no seu construtor de páginas (veja [Blocos e Shortcodes](/modulos/blocos-shortcodes/)).
+  da campanha no seu construtor de páginas (veja [Shortcodes](/modulos/shortcodes/)).
 
 > ✅ **Boas práticas de divulgação**
 >
