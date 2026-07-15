@@ -21,6 +21,27 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 
 ---
 
+## Versão 2.7 — Novos componentes para montar suas páginas
+
+- **Botão de doação** (`[rit360sol_botao_doar]`): um botão pronto, com a cor da sua marca, que leva
+  direto para a página da causa. Ótimo para chamar à ação no meio de um texto.
+- **Barra de progresso** (`[rit360sol_meta]`): mostre só a barrinha "arrecadado × meta" de uma
+  campanha ou projeto, onde você quiser.
+- **Contador** (`[rit360sol_contador]`): exiba um número que engaja — "já arrecadamos R$ X",
+  "N doações" — do total ou de uma campanha/projeto específico.
+- **Listas na ordem que você quer**: em projetos, campanhas e transparência, agora dá para **ordenar**
+  (por título, valor arrecadado ou percentual da meta) e mostrar, por exemplo, os **3 mais
+  arrecadados**.
+- **Nova tela "Shortcodes"** no menu do plugin: uma referência com todos os componentes, seus
+  parâmetros e um botão **Copiar** em cada exemplo. (A antiga "Manual do Usuário" saiu do painel — o
+  manual completo agora fica aqui, on-line.)
+
+> **Atenção** — se você montou alguma página com os nomes antigos `[bs_doar]` ou
+> `[bs_painel_doador]`, troque-os por `[rit360sol_doar]` e `[rit360sol_painel_doador]`: os apelidos
+> antigos foram descontinuados.
+
+---
+
 ## Versão 2.6 — E-mails com a cara da sua organização e página de doação mais rica
 
 - Os **e-mails automáticos** (agradecimento, magic link, lembrete) agora herdam as
