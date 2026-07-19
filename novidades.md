@@ -21,6 +21,18 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 
 ---
 
+## Versão 2.8 — Formulário de doação sob medida e edição rápida do produto
+
+- O **formulário de doação** (`[rit360sol_doar]`) agora deixa você **mostrar ou ocultar** cada parte:
+  imagem, título, frase de impacto, descrição, valores sugeridos, vídeo e história. Assim você adapta
+  o formulário ao layout da sua página. Por padrão continua tudo visível — quem já tem páginas montadas
+  não precisa mudar nada. Para ocultar algo, use, por exemplo, `show_imagem="0"`.
+- Na tela **Projetos de doação**, cada projeto ganhou o link **“Editar produto”**, que abre o produto
+  no editor do WooCommerce — o jeito rápido de trocar a imagem, os valores, o vídeo e os textos da sua
+  página de doação (inclusive a `/doe`).
+
+---
+
 ## Versão 2.7 — Novos componentes para montar suas páginas
 
 - **Botão de doação** (`[rit360sol_botao_doar]`): um botão pronto, com a cor da sua marca, que leva

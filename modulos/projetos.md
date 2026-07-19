@@ -26,6 +26,10 @@ Para cada projeto você vê o nome, o produto associado, a página pública
 (permalink) e se ele é o **projeto padrão**. O projeto padrão é o que alimenta o
 link “Doar” dos e-mails automáticos.
 
+Na coluna **Ações**, o link **“Editar produto”** abre o produto de doação no editor do
+WooCommerce (em nova aba) — é onde você muda imagem, valores sugeridos, frase de impacto,
+vídeo e descrição. Vale para o projeto padrão (página `/doe`) e para todos os outros.
+
 Ao lado de cada projeto, você define:
 
 - **Meta** (valor-alvo em R$);

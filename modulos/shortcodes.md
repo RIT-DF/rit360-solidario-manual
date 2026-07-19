@@ -36,7 +36,11 @@ Formulário completo de doação de um produto (valores sugeridos, "outro valor"
 habilitado, imagem, frase de impacto, vídeo, descrição e o botão **Doar agora**).
 
 - `id` — ID do produto de doação (obrigatório).
+- **Mostrar/ocultar seções** (todas ligadas por padrão; passe `"0"` para ocultar):
+  `show_imagem`, `show_titulo`, `show_impacto`, `show_descricao`, `show_valores`,
+  `show_video`, `show_historia`. O botão **Doar** e o campo de valor livre continuam sempre.
 - Exemplo: `[rit360sol_doar id="67"]`
+- Exemplo enxuto (só valores e botão): `[rit360sol_doar id="67" show_imagem="0" show_video="0" show_historia="0" show_descricao="0"]`
 
 ### `[rit360sol_botao_doar]`
 Um botão/CTA leve que leva à página do produto de doação. Use em páginas de conteúdo,
