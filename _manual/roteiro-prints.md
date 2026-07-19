@@ -41,6 +41,7 @@ Destino dos arquivos: `manual/assets/img/`.
 |---|---|---|
 | `doe-pagina.png` | `http://localhost:3080/doe/` | Imagem/título/frase de impacto + valores + "Doar agora" + vídeo + descrição (página inteira) |
 | `checkout-doacao.png` | em `/doe`, escolher R$ 50 → "Doar agora" → checkout | Rótulos "Doar agora"/"Valor da doação", campo CPF, consentimento LGPD, "doar anonimamente" |
+| `checkout-doacao-pj.png` | no checkout, marcar **"Pessoa jurídica"** no seletor | Seletor "Você está doando como: Pessoa física / Pessoa jurídica" com PJ marcado + campo **CNPJ** + dica de preencher "Empresa" (razão social) |
 | `transparencia.png` | `http://localhost:3080/transparencia-teste/` | Cards de campanhas/projetos com arrecadado + barra de meta (sem nomes de doadores) |
 | `portal-login.png` | `http://localhost:3080/minhas-doacoes/` | Formulário "Acessar meu painel" (e-mail + "Receber link") |
 | `portal-doacoes.png` | portal logado (magic link donor 11) → aba "Minhas doações" | Histórico + "Baixar PDF" |

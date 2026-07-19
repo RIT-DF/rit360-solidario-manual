@@ -6,9 +6,9 @@ permalink: /modulos/pagina-de-doacao/
 task: modulo-pagina-doacao
 role: doador
 routes: ["#/doe"]
-screenshots: [doe-pagina, checkout-doacao]
+screenshots: [doe-pagina, checkout-doacao, checkout-doacao-pj]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-15
+last_verified: 2026-07-19
 status: publicado
 ---
 
@@ -40,10 +40,30 @@ WooCommerce, mas com a linguagem trocada quando o carrinho tem só doação:
 - Botão **“Doar agora”**, **“Valor da doação”**, **“Total da doação”** no lugar dos
   termos de loja;
 - **Nome e e-mail** obrigatórios;
-- **CPF/CNPJ** opcional, com o aviso de que é necessário para o recibo fiscal;
+- o seletor **“Você está doando como: Pessoa física / Pessoa jurídica”** (ver abaixo);
 - **consentimento LGPD** obrigatório (com link para a política da OSC);
 - opção **“Quero doar anonimamente”** (quando o carrinho é só doação);
 - o **endereço** fica opcional se a OSC opera apenas com doações digitais.
+
+### Pessoa física ou pessoa jurídica
+
+O doador escolhe se está doando como **pessoa física** ou **pessoa jurídica** — o
+recibo sai no formato certo para cada um:
+
+- **Pessoa física:** aparece o campo **CPF** (opcional; necessário para o recibo
+  fiscal). Se preenchido, o CPF é validado.
+- **Pessoa jurídica:** aparecem o campo **CNPJ** (obrigatório e validado — aceita o
+  novo CNPJ com letras da Receita) e a orientação para preencher o campo **“Empresa”**
+  com a **razão social**. O recibo e a declaração anual da empresa saem com **razão
+  social + CNPJ**.
+
+![Checkout de doação como pessoa jurídica](/assets/img/checkout-doacao-pj.png)
+
+> 💡 **Nota para a OSC**
+>
+> Para que a doação de empresa funcione, o campo **“Empresa”** precisa estar visível no
+> checkout. Isso se ajusta nas configurações de checkout do WooCommerce (o campo
+> “Empresa” deve estar como *opcional*, não *oculto*).
 
 > 💡 **Nota**
 >

@@ -5,7 +5,7 @@ permalink: /novidades/
 task: novidades
 role: admin
 source_docs: [CHANGELOG.md]
-last_verified: 2026-07-15
+last_verified: 2026-07-19
 status: publicado
 ---
 
@@ -18,6 +18,28 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 >
 > Esta é a versão amigável do histórico. O registro técnico completo fica no
 > `CHANGELOG.md` do projeto.
+
+---
+
+## Versão 2.9 — Doações de empresas (pessoa jurídica)
+
+- **Empresas agora podem doar.** No checkout, o doador escolhe entre **Pessoa física**
+  e **Pessoa jurídica**. Quem doa como empresa informa a **razão social** (no campo
+  “Empresa”) e o **CNPJ** — e o **recibo** e a **declaração anual** saem com esses
+  dados. Pessoa física continua exatamente como antes, com CPF.
+- **CNPJ com letras:** o campo aceita o novo formato de CNPJ alfanumérico da Receita.
+- **CPF conferido:** quando o doador pessoa física informa o CPF, ele passa a ser
+  validado, reduzindo recibos com número errado.
+- Para habilitar a doação de empresas, deixe o campo **“Empresa”** visível no checkout
+  do WooCommerce (como *opcional*).
+
+---
+
+## Versão 2.8.3 — Logomarca da OSC nos e-mails
+
+- Os e-mails automáticos (agradecimento, acesso ao painel e lembrete) passam a exibir a
+  **logomarca da organização** no topo, sobre um fundo branco, quando há logo
+  configurada na **Identidade Visual**. Sem logo, o e-mail continua como antes.
 
 ---
 

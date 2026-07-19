@@ -8,7 +8,7 @@ role: doador
 routes: ["#/minhas-doacoes"]
 screenshots: [portal-login, portal-doacoes, portal-dados, portal-declaracao, portal-preferencias, portal-consentimentos]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-15
+last_verified: 2026-07-19
 status: publicado
 ---
 
@@ -39,9 +39,10 @@ cada doação.
 
 ![Portal — Minhas doações](/assets/img/portal-doacoes.png)
 
-**Meus dados** — o doador edita nome, telefone e endereço. O **e-mail e o CPF não
-são editáveis** (são a identidade do registro). Aqui também fica a “zona de perigo”
-para **excluir os próprios dados**.
+**Meus dados** — o doador edita nome, telefone e endereço. O **e-mail e o documento
+não são editáveis** (são a identidade do registro): para pessoa física aparece o
+**CPF** mascarado; para pessoa jurídica, a **razão social** e o **CNPJ** mascarado.
+Aqui também fica a “zona de perigo” para **excluir os próprios dados**.
 
 ![Portal — Meus dados](/assets/img/portal-dados.png)
 
