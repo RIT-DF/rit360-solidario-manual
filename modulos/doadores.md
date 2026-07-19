@@ -54,7 +54,10 @@ Na parte inferior da tela:
 - **Exportar doadores (XLSX)** — respeita a busca ativa, inclui anonimizados e traz
   CPF/CEP/telefone como texto (para não “quebrar” na planilha).
 - **Manutenção**: *reprocessar recibos pendentes* e *atribuir projeto às doações
-  antigas* (útil para doações anteriores à organização por projetos).
+  antigas* (útil para doações anteriores à organização por projetos). O *reprocessar
+  recibos pendentes* também **recupera doações pagas que ficaram sem doador** (por
+  exemplo, se o meio de pagamento não registrou o doador na hora): ele cria o doador
+  e gera o recibo faltante.
 
 > ⚠️ **Atenção — dados pessoais**
 >

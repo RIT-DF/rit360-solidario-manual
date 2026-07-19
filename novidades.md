@@ -21,6 +21,18 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 
 ---
 
+## Versão 2.8.1 — Correções
+
+- **Doações passam a registrar sempre.** Em alguns meios de pagamento (como o Pix), uma doação paga
+  podia concluir sem registrar o doador nem gerar o recibo. Agora o doador é registrado no momento em
+  que a doação é **concluída**, independentemente do meio de pagamento.
+- **Recuperar doações antigas sem recibo:** em **Doadores → Manutenção**, o botão *Reprocessar recibos
+  pendentes* agora também **cria o doador** quando faltar e gera o recibo.
+- **Instalação sobre a Bússola Solidária:** o painel deixa de ficar preso no assistente de
+  configuração quando a organização já estava configurada — vai direto para o Painel.
+
+---
+
 ## Versão 2.8 — Formulário de doação sob medida e edição rápida do produto
 
 - O **formulário de doação** (`[rit360sol_doar]`) agora deixa você **mostrar ou ocultar** cada parte:
