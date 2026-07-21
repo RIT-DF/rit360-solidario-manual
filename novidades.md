@@ -21,6 +21,27 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 
 ---
 
+## Versões 2.10 a 2.12 — API e integrações (n8n)
+
+- **Chegou a API do RIT360 Solidário.** Agora dá para **conectar o plugin ao n8n** e a
+  outros sistemas: mandar cada nova doação para uma planilha, avisar a equipe no chat
+  quando bater a meta, criar campanhas a partir de outra ferramenta, e mais.
+- **Chaves de integração com permissões.** Na tela **Shortcodes e API → aba API**, você
+  cria chaves escolhendo exatamente o que cada uma pode fazer (só números, doações,
+  doadores, dados pessoais, escrever campanhas/projetos) e a validade. A chave aparece
+  **uma única vez** — copie na hora — e pode ser **revogada** quando quiser.
+- **Webhooks em tempo real.** Cadastre um destino (por exemplo, a URL de um fluxo no
+  n8n) e o plugin avisa sozinho a cada doação concluída, novo doador, recibo emitido e
+  outros eventos. Cada envio é **assinado** para garantir a origem, tem **reenvio
+  automático**, **log de entregas** e botão **Enviar teste**.
+- **Privacidade em primeiro lugar.** O acesso a dados pessoais depende de uma permissão
+  própria (`donors:read_pii`) e **todo acesso a PII é registrado na Auditoria LGPD**.
+- Passo a passo e exemplos em [API e integrações](/modulos/api-integracoes/).
+- **Nota de instalação:** o menu do plugin que se chamava "Shortcodes" agora é
+  **"Shortcodes e API"**.
+
+---
+
 ## Versão 2.9.2 — Portal do doador sem página duplicada
 
 - **Fim das páginas “Minhas doações” repetidas.** Em alguns sites, a página do portal

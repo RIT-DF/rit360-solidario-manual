@@ -30,6 +30,7 @@ painel do WordPress; os fluxos do doador acontecem no site público.
 
 - [**Produto de doação**](/modulos/produto-de-doacao/) — a configuração de cada “pacote de valores”.
 - [**Shortcodes**](/modulos/shortcodes/) — para montar páginas no seu construtor.
+- [**API e integrações**](/modulos/api-integracoes/) — conecte o plugin ao n8n e outros sistemas (API REST e webhooks).
 
 ## A barra da família RIT360
 

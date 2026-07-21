@@ -19,8 +19,9 @@ Shortcodes são pequenos códigos que você cola em qualquer página, post ou co
 do RIT360 Solidário. É assim que você monta o hotsite de uma campanha com as peças do
 plugin.
 
-No painel, o menu **RIT360 Solidário → Shortcodes** traz esta mesma referência, com um
-botão **Copiar** ao lado de cada exemplo.
+No painel, o menu **RIT360 Solidário → Shortcodes e API** traz esta mesma referência, com
+um botão **Copiar** ao lado de cada exemplo. A aba **API** dessa mesma tela cuida das
+integrações com o n8n e outros sistemas — veja [API e integrações](/modulos/api-integracoes/).
 
 ![Tela Shortcodes no painel](/assets/img/shortcodes-tela.png)
 

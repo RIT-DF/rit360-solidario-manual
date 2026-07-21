@@ -35,6 +35,23 @@ Destino dos arquivos: `manual/assets/img/`.
 | `produto-doacao.png` | editar produto 67 (`/wp-admin/post.php?post=67&action=edit`), aba "Configuração de Doação" | Campos: valores, valor livre, frase de impacto, vídeo |
 | `feedback-modal.png` | qualquer tela do plugin → clicar "Enviar feedback" | Modal de feedback |
 
+## API e integrações (v2.10–2.12) — prints opcionais, ainda NÃO capturados
+
+A página `modulos/api-integracoes.md` foi escrita sem prints obrigatórios (é referência
+técnica). Se quiser ilustrá-la depois, capturar no dev-wp, admin logado, viewport
+1920×1080, salvando em `manual/assets/img/` com estes nomes — e então referenciá-los na
+página e no front-matter `screenshots`:
+
+| Arquivo (sugerido) | Rota / ação | Deve mostrar |
+|---|---|---|
+| `api-chaves.png` | **RIT360 Solidário → Shortcodes e API**, aba **API**, seção Chaves | Lista de chaves + botão "Nova chave" + seletor de escopos e validade |
+| `api-chave-criada.png` | após criar uma chave | Aviso "copie agora, aparece uma única vez" com a chave |
+| `api-webhooks.png` | mesma aba API, seção Webhooks | Form "Novo destino" (URL + eventos + incluir PII) + botão "Enviar teste" + log de entregas |
+
+> Confirmar com o Bruno a rota exata da aba API (submenu vs. aba dentro de
+> `rit360-solidario-shortcodes`) antes de capturar — a página usa a navegação por nome
+> de menu ("Shortcodes e API → aba API"), que não depende do query string.
+
 ## Front-end — deslogado (sem barra do WordPress)
 
 | Arquivo | Rota / ação | Deve mostrar |
