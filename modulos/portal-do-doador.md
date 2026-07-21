@@ -8,7 +8,7 @@ role: doador
 routes: ["#/minhas-doacoes"]
 screenshots: [portal-login, portal-doacoes, portal-dados, portal-declaracao, portal-preferencias, portal-consentimentos]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-19
+last_verified: 2026-07-21
 status: publicado
 ---
 

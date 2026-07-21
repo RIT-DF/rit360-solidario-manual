@@ -5,7 +5,7 @@ permalink: /novidades/
 task: novidades
 role: admin
 source_docs: [CHANGELOG.md]
-last_verified: 2026-07-19
+last_verified: 2026-07-21
 status: publicado
 ---
 
@@ -18,6 +18,27 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 >
 > Esta é a versão amigável do histórico. O registro técnico completo fica no
 > `CHANGELOG.md` do projeto.
+
+---
+
+## Versão 2.9.2 — Portal do doador sem página duplicada
+
+- **Fim das páginas “Minhas doações” repetidas.** Em alguns sites, a página do portal
+  aparecia duplicada (`minhas-doacoes-2`, `-3`…), criada de novo a cada atualização ou
+  reinstalação. Ao atualizar para esta versão, o plugin **move para a lixeira** as
+  duplicatas antigas que sobraram — sempre de forma **reversível**, sem tocar na página
+  ativa nem em nenhuma página que você tenha editado. Nada a fazer da sua parte.
+
+---
+
+## Versão 2.9.1 — Correção do acesso ao portal do doador
+
+- **Portal do doador voltou a abrir em sites que vieram da Bússola.** Nesses sites, ao
+  pedir o link de acesso em **Minhas doações**, o doador podia cair numa página
+  “não encontrada”, porque a página do portal havia sido movida para a lixeira ou
+  apontava para um endereço antigo. Agora o plugin **localiza e conserta a página do
+  portal automaticamente** ao atualizar, e só usa a página quando ela está publicada.
+  Sites migrados se corrigem sozinhos ao atualizar para esta versão.
 
 ---
 
