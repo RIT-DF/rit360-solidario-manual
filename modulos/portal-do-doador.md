@@ -6,8 +6,8 @@ permalink: /modulos/portal-do-doador/
 task: modulo-portal-doador
 role: doador
 routes: ["#/minhas-doacoes"]
-screenshots: [portal-login, portal-doacoes, portal-dados, portal-declaracao, portal-preferencias, portal-consentimentos]
-source_docs: [PRODUCT.md]
+screenshots: [portal-login, portal-doacoes, portal-dados, portal-declaracao, portal-preferencias, portal-consentimentos, portal-anonimizacao]
+source_docs: [PRODUCT.md, solidario-privacy-ropa.md#29]
 last_verified: 2026-07-21
 status: publicado
 ---
@@ -61,12 +61,24 @@ doador pode **anonimizar os próprios dados**, com dupla confirmação.
 
 ![Portal — Consentimentos](/assets/img/portal-consentimentos.png)
 
+Ao pedir a exclusão, o doador vê uma **tela de confirmação** que explica, em
+palavras claras, o que acontece: os dados pessoais serão substituídos por valores
+anônimos, **mas os recibos fiscais já emitidos são mantidos como estão**.
+
+![Portal — Confirmação da exclusão de dados](/assets/img/portal-anonimizacao.png)
+
 > ⚠️ **Atenção**
 >
 > A exclusão/anonimização é definitiva: os dados pessoais são substituídos por
-> valores anônimos. Os **registros de doação são preservados** de forma anônima
-> (exigência fiscal), mas o doador deixa de receber comunicações e não é mais
+> valores anônimos. O doador deixa de receber comunicações e não é mais
 > identificável.
+>
+> **O que é mantido:** os **recibos fiscais já emitidos** ficam preservados como
+> estão — não são apagados nem alterados. A lei fiscal obriga a organização a
+> guardar o recibo (o documento) por alguns anos, e a LGPD permite reter um dado
+> quando existe **obrigação legal**. Os **registros de doação** também são
+> preservados de forma anônima. A trilha de auditoria registra que os recibos
+> foram retidos.
 
 > ✅ **Boas práticas**
 >

@@ -66,6 +66,7 @@ página e no front-matter `screenshots`:
 | `portal-declaracao.png` | aba "Declaração anual" | Exercício + "Baixar declaração" |
 | `portal-preferencias.png` | aba "Preferências" | Opt-in de lembretes |
 | `portal-consentimentos.png` | aba "Consentimentos" | Consentimento c/ data + revogar + histórico |
+| `portal-anonimizacao.png` | aba "Consentimentos" → botão de excluir/anonimizar dados → **tela/modal de confirmação** | ⏳ **pendente (v2.13.1)** — o novo aviso explícito: "os dados serão anonimizados, mas os **recibos fiscais já emitidos são mantidos**" + os dois passos de dupla confirmação. Doador demo (magic link donor 11). NÃO confirmar a exclusão de verdade (é definitiva) — capturar só a tela de aviso. |
 
 ### Magic link do portal (uso único — gerar fresco no contexto limpo)
 ```bash

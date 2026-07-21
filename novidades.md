@@ -21,6 +21,26 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 
 ---
 
+## Versões 2.13 — Mais privacidade para o doador (LGPD)
+
+Melhorias de transparência e de proteção de dados. A maioria funciona **de
+bastidor**, sem nada para configurar.
+
+- **Fica claro o que é mantido ao excluir os dados.** Quando o doador pede para
+  **excluir os próprios dados** no [portal](/modulos/portal-do-doador/), ele agora vê
+  um aviso explícito: os dados pessoais são anonimizados, **mas os recibos fiscais já
+  emitidos são mantidos como estão** — por obrigação legal de guarda fiscal (a lei
+  exige guardar o recibo, e a LGPD permite reter dado por obrigação legal). A
+  [Auditoria LGPD](/modulos/auditoria-lgpd/) registra que os recibos foram retidos.
+- **Menos dado pessoal no registro de auditoria.** Quando o doador altera os próprios
+  dados, a auditoria passa a guardar **apenas quais campos mudaram**, não mais os
+  valores em texto plano.
+- **IP e navegador apagados após 6 meses.** O plugin **remove automaticamente** o IP e
+  o navegador (user-agent) dos registros de auditoria e de acesso com mais de **6
+  meses**, mantendo o restante do histórico. É automático, não precisa configurar.
+
+---
+
 ## Versões 2.10 a 2.12 — API e integrações (n8n)
 
 - **Chegou a API do RIT360 Solidário.** Agora dá para **conectar o plugin ao n8n** e a

@@ -7,8 +7,8 @@ task: modulo-lgpd
 role: admin
 routes: ["#/wp-admin/admin.php?page=rit360-solidario-lgpd"]
 screenshots: [auditoria-lgpd]
-source_docs: [solidario-privacy-ropa.md]
-last_verified: 2026-07-15
+source_docs: [solidario-privacy-ropa.md, solidario-privacy-ropa.md#26, solidario-privacy-ropa.md#27, solidario-privacy-ropa.md#29]
+last_verified: 2026-07-21
 status: publicado
 ---
 
@@ -45,11 +45,35 @@ Ao anonimizar, os dados pessoais são substituídos por valores anônimos, mas o
 fiscal exige a guarda por alguns anos. O doador deixa de receber comunicações, e a
 ação fica registrada nesta trilha de auditoria.
 
+> 💡 **O que é mantido — e por quê**
+>
+> Os **recibos fiscais já emitidos são mantidos como estão** na anonimização: não
+> são apagados nem alterados. A lei fiscal obriga a organização a guardar o recibo
+> (o documento) por alguns anos, e a LGPD permite reter um dado quando há
+> **obrigação legal**. Por isso, ao confirmar a exclusão, o doador vê um aviso
+> explícito de que os recibos serão retidos — e esta trilha de auditoria **registra
+> a retenção dos recibos**.
+
 > ⚠️ **Atenção**
 >
 > Se um doador pedir a exclusão dos dados por e-mail, oriente-o a fazer isso pelo
 > **portal do doador** (ele acessa por magic link, sem senha). É lá que a
 > anonimização acontece, com a devida confirmação.
+
+## Menos dado pessoal guardado (melhorias de bastidor)
+
+Duas melhorias de privacidade funcionam **sozinhas**, sem nada para configurar. Elas
+reduzem a quantidade de dado pessoal que fica guardado nos registros de auditoria e
+de acesso.
+
+- **A auditoria registra só o que mudou, não os valores.** Quando um doador altera os
+  próprios dados (nome, telefone, endereço), o registro passa a guardar **apenas
+  quais campos foram alterados** — não mais o conteúdo antigo e novo em texto plano.
+  A trilha continua completa, sem duplicar o dado pessoal fora do cadastro do doador.
+- **IP e navegador são apagados após 6 meses.** O plugin **remove automaticamente** o
+  **IP** e o **navegador (user-agent)** dos registros de auditoria e de acesso com
+  mais de **6 meses**, mantendo o restante do histórico. É automático — não precisa
+  ativar nada. (Quem faz a manutenção técnica do site pode ajustar esse prazo.)
 
 ## Boas práticas de privacidade
 
